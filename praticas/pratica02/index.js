@@ -28,27 +28,19 @@ function telefone() {
 function escolherOpcao(opcao) {
     switch(opcao) {
         case '1' :
-            const nome1 = nome();
-            const email1 = email();
-            const telefone1 = telefone();
-            contatoControlador.adicionarContato(nome1, email1, telefone1);
+            contatoControlador.adicionarContato(nome(), email(), telefone());
             break;
         case '2' :
             contatoControlador.listarContatos();
             break;
         case '3' :
-            const nome3 = nome();
-            contatoControlador.buscarContato(nome3);
+            contatoControlador.buscarContato(nome());
             break;
         case '4' :
-            const nome4 = nome();
-            const email4 = email();
-            const telefone4 = telefone();
-            contatoControlador.atualizarContato(nome4, email4, telefone4);
+            contatoControlador.atualizarContato(nome(), email(), telefone());
             break;
         case '5' :
-            const nome5 = nome();
-            contatoControlador.removerContato(nome5);
+            contatoControlador.removerContato(nome());
             break;
         case '6' :
             process.exit(0);
