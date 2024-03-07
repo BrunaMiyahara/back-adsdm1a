@@ -5,6 +5,3 @@ module.exports = class Contato{
         this.telefone = telefone;
     }
 }
-
-
-   
